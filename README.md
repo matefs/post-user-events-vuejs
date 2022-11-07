@@ -1,4 +1,4 @@
-# user-events-vue
+# Post request hadling user input with vuejs
 
 ## Project setup
 ```
