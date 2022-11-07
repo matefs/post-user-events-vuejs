@@ -7,10 +7,10 @@
   <div class='add-item-form'>
  
 
-<input type='text' v-model='newItem' placeholder="Add an item" @keyup.enter="addItemToItemsList(newItem)">
+<input type='text' v-model='newItem' placeholder="Add an item" @keyup.enter="addItemToItemsList()">
   
   <button
-  @click="addItemToItemsList(newItem)"
+  @click="addItemToItemsList()"
   class="btn btn-primary"
   >Add item
   </button>
@@ -45,8 +45,9 @@ export default {
     }
   },
   methods:{
-      addItemToItemsList: function(newItem){
-        this.itemsList.push({id: this.itemsList.length + 1 , label: newItem})
+      addItemToItemsList: function(){
+        this.itemsList.push({id: this.itemsList.length + 1 , label: this.newItem})
+        this.newItem = ''
         console.table(this.itemsList)
       },
       postItemsList : function(ItemsListJson){
