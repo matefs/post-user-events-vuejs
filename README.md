@@ -1,5 +1,8 @@
 # Post request hadling user input with vuejs
 
+Vuejs project that takes user input and sends it as a POST request to https://mateus.requestcatcher.com/. The technologies used are vuejs, v-model, v-for, axios, and online request catcher.
+
+
 ## Project setup
 ```
 yarn install
